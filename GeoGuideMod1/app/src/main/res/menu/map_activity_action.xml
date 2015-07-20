@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/b_More"
+        android:icon="@drawable/ic_action_overflow"
+        app:showAsAction="always"
+        android:title="More">
+        <menu>
+
+            <item
+                android:id="@+id/mapTypeNone"
+                app:showAsAction="always|withText"
+                android:title="@string/mapTypeNone" />
+
+            <item
+                android:id="@+id/mapTypeNormal"
+                app:showAsAction="always|withText"
+                android:title="@string/mapTypeNormal" />
+
+            <item
+                android:id="@+id/mapTypeSatellite"
+                app:showAsAction="always|withText"
+                android:title="@string/mapTypeSatellite" />
+
+            <item
+                android:id="@+id/mapTypeTerrain"
+                app:showAsAction="always|withText"
+                android:title="@string/mapTypeTerrain" />
+
+            <item
+                android:id="@+id/mapTypeHybrid"
+                android:title="@string/mapTypeHybrid"
+                app:showAsAction="always|withText"/>
+
+
+        </menu>
+    </item>
+
+</menu>

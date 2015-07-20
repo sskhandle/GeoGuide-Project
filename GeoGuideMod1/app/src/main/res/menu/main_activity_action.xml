@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/a_More"
+        android:icon="@drawable/ic_action_overflow"
+        app:showAsAction="always"
+        android:title="More">
+        <menu>
+
+            <item
+                android:id="@+id/fav_list"
+                android:icon="@drawable/fv_list"
+                app:showAsAction="always|withText"
+                android:title="@string/fav_list" />
+
+            <item
+                android:id="@+id/change_radius"
+                android:icon="@drawable/radius"
+                android:title="@string/change_radius"
+                app:showAsAction="always|withText"/>
+
+
+       </menu>
+    </item>
+
+</menu>

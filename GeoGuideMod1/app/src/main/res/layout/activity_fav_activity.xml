@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#e3f2fd"
+    tools:context="com.cs442_skatkar.geoguidemod1.fav_activity"
+    android:id="@+id/fav_layout"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fav_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="normal|bold"
+        android:text="List of Favorites"
+        android:textSize="24dp"
+        android:padding="6dp" />
+    <TextView
+        android:id="@+id/fav_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="normal|italic"
+        android:text="Long press item in the list to delete it"
+        android:padding="6dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <ListView
+        android:id="@+id/list_favorite_place"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/transparent"
+        android:dividerHeight="10dp"
+        android:drawSelectorOnTop="true"
+        android:footerDividersEnabled="false"
+        android:padding="10dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_centerHorizontal="true">
+    </ListView>
+
+
+
+</LinearLayout>

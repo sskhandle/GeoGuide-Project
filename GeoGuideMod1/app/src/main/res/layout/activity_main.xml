@@ -1,0 +1,114 @@
+<!-- <android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    (This is a comment) Listview to display slider menu
+    <ListView
+        android:id="@+id/list_slidermenu"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector"
+        android:background="#FFFFFF" />
+-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3f2fd"
+    android:padding="5dip"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/user_input"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/btn_find"
+        android:layout_toLeftOf="@+id/btn_find" />
+
+    <Button
+        android:id="@+id/btn_find"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="@string/str_btn_find"
+        android:background="@drawable/button_style"
+        android:drawableLeft="@drawable/find_icon"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:textColor="#FFFFFE" />
+
+
+    <ListView
+        android:id="@+id/list_category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/transparent"
+        android:dividerHeight="3dp"
+        android:drawSelectorOnTop="true"
+        android:footerDividersEnabled="false"
+        android:padding="8dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/user_input">
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/address_tv"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/set_stuff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView_main"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/set_stuff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|italic"
+        android:text="Use Settings (the three dots) to change the radius"
+        android:layout_below="@+id/textView_main"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/address_tv"
+        android:background="@android:color/darker_gray"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/address_tv"
+        android:background="@android:color/darker_gray"/>
+
+
+
+</RelativeLayout>
+
+
+
+<!-- </android.support.v4.widget.DrawerLayout> -->
