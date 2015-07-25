@@ -1,5 +1,5 @@
 # GeoGuide-Project
-Download the app [here](https://drive.google.com/open?id=0B60VzQes4ka7UU55ZERJM2ltd0E)
+**Download the app [here](https://drive.google.com/open?id=0B60VzQes4ka7UU55ZERJM2ltd0E)**
 
 GeoGuide will allow the user to find out information about the nearby surroundings.
 
